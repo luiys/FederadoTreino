@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #2d2e29
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="text">
+                <label>Digite o tempo do treino:</label>
+                <input type="number" id="minutes"></input>
+            </div>
+            <div class="btn">
+                <button class="myButton" onclick="iniciar()">Iniciar Treino</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function iniciar() {
+
+            let minutos = document.getElementById("minutes")
+            window.location = "arrows.html?time=" + minutos.value;
+        }
+    </script>
+
+</body>
+
+</html>
